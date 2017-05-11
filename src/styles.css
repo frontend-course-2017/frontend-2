@@ -67,16 +67,6 @@ button {
   flex-basis: 100%;
 }
 
-.sidebar {
-  min-height: 1025px;
-  background-color: #0e0e0e;
-  color: #ffffff;
-  flex-basis: 28.77%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .content {
   flex-basis: 71.23%;
 }
@@ -149,61 +139,6 @@ button {
 
 .wrapper {
   min-height: 100%;
-}
-
-.logo {
-  height: 94px;
-  margin-top: 31px;
-}
-
-.menu {
-  font-size: 24px;
-  margin-top: 150px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.menu-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.menu-sub-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 15px 0 0 0;
-}
-
-.menu .menu-item-link a, .menu .menu-sub-item a {
-  color: #303030;
-  text-decoration: none;
-}
-
-.menu .menu-item-link a:hover, .menu .menu-sub-item a:hover {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.menu .menu-item-link a {
-  font-family: AvenirNext-Bold;
-}
-
-.menu .menu-item-link.menu-item-link_active a, .menu .menu-sub-item.menu-sub-item_active {
-  color: #ffffff;
-}
-
-.menu-sub-items .menu-sub-item {
-  font-family: AndaleMono;
-  font-weight: normal;
-  margin-bottom: 25px;
-}
-
-.menu-sub-items .menu-sub-item:last-child {
-  margin-bottom: 10px;
 }
 
 .shoes-list-shoe {
@@ -314,44 +249,6 @@ button {
   border-bottom: 4px solid #373737;
   padding-bottom: 10px;
   padding-left: 14px;
-}
-
-.search-form {
-  flex-basis: 100%;
-  display: flex;
-}
-
-.search-submit {
-  width: 28px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  background-image: url('./images/search_submit.png');
-  color: transparent;
-  cursor: pointer;
-  padding-right: 5px;
-}
-
-.search-input-container {
-  padding-left: 15px;
-  flex-basis: 100%;
-}
-
-.search-input {
-  background-color: transparent;
-  border: none;
-  color: white;
-  height: 30px;
-  font-size: 24px;
-}
-
-.search-input:focus {
-  outline: none;
-}
-
-.menu-item-link_active:after {
-  content: url('./images/expanded.png');
-  vertical-align: 10%;
 }
 
 .product {
