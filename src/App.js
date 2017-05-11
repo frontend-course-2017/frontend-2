@@ -10,16 +10,16 @@ class App extends Component {
           <aside className="sidebar">
             <div className="logo">
               <a href="#">
-                <img alt="Adidas" src="./images/logo.png"/>
+                <img alt="Adidas" src="./images/logo.png" />
               </a>
             </div>
             <div className="search-container">
               <form className="search-form" name="search" action="" method="get">
                 <div className="search-submit-container">
-                  <input type="submit" value="Search" className="search-submit"/>
+                  <input type="submit" value="Search" className="search-submit" />
                 </div>
                 <div className="search-input-container">
-                  <input title="Search" type="text" className="search-input"/>
+                  <input title="Search" type="text" className="search-input" />
                 </div>
               </form>
             </div>
@@ -57,7 +57,7 @@ class App extends Component {
               <div className="filter-icon-wrapper">
                 <div className="filter-icon-container">
                   <div className="filter-icon">
-                    <img src="./images/filter.png"/>
+                    <img src="./images/filter.png" />
                   </div>
                 </div>
               </div>
@@ -106,10 +106,10 @@ class App extends Component {
                       <div className="shoe-thumbnail-wrapper">
                         <div className="shoe-thumbnail-container">
                           <a className="shoe-thumbnail-link" href="#">
-                        <span className="sale-badge shoe-thumbnail-sale-badge">
+                            <span className="sale-badge shoe-thumbnail-sale-badge">
                             SALE
                         </span>
-                            <img className="shoe-thumbnail" src="./images/big_shoe.jpg"/>
+                            <img className="shoe-thumbnail" src="./images/big_shoe.jpg" />
                           </a>
                         </div>
                       </div>
@@ -127,7 +127,7 @@ class App extends Component {
                       <div className="shoe-thumbnail-wrapper">
                         <div className="shoe-thumbnail-container">
                           <a href="#">
-                            <img className="shoe-thumbnail" src="./images/shoe_2.jpg"/>
+                            <img className="shoe-thumbnail" src="./images/shoe_2.jpg" />
                           </a>
                         </div>
                       </div>
@@ -145,7 +145,7 @@ class App extends Component {
                       <div className="shoe-thumbnail-wrapper">
                         <div className="shoe-thumbnail-container">
                           <a href="#">
-                            <img className="shoe-thumbnail" src="./images/shoe_3.jpg"/>
+                            <img className="shoe-thumbnail" src="./images/shoe_3.jpg" />
                           </a>
                         </div>
                       </div>
@@ -167,7 +167,7 @@ class App extends Component {
                       <div className="shoe-thumbnail-wrapper">
                         <div className="shoe-thumbnail-container">
                           <a href="#">
-                            <img className="shoe-thumbnail" src="./images/big_shoe.jpg"/>
+                            <img className="shoe-thumbnail" src="./images/big_shoe.jpg" />
                           </a>
                         </div>
                       </div>
@@ -185,10 +185,10 @@ class App extends Component {
                       <div className="shoe-thumbnail-wrapper">
                         <div className="shoe-thumbnail-container">
                           <a className="shoe-thumbnail-link" href="#">
-                        <span className="sale-badge shoe-thumbnail-sale-badge">
+                            <span className="sale-badge shoe-thumbnail-sale-badge">
                             SALE
                         </span>
-                            <img className="shoe-thumbnail" src="./images/shoe_2.jpg"/>
+                            <img className="shoe-thumbnail" src="./images/shoe_2.jpg" />
                           </a>
                         </div>
                       </div>
@@ -206,7 +206,7 @@ class App extends Component {
                       <div className="shoe-thumbnail-wrapper">
                         <div className="shoe-thumbnail-container">
                           <a href="#">
-                            <img className="shoe-thumbnail" src="./images/shoe_3.jpg"/>
+                            <img className="shoe-thumbnail" src="./images/shoe_3.jpg" />
                           </a>
                         </div>
                       </div>
