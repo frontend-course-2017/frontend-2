@@ -1,13 +1,10 @@
 import React from 'react';
+import Logo from './Logo';
 import './styles.css';
 
 export default () => (
   <aside className="sidebar">
-    <div className="logo">
-      <a href="#">
-        <img alt="Adidas" src={require('./logo.png')} />
-      </a>
-    </div>
+    <Logo />
     <div className="search-container">
       <form className="search-form" name="search" action="" method="get">
         <div className="search-submit-container">
