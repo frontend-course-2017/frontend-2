@@ -58,38 +58,6 @@
   margin-bottom: 10px;
 }
 
-.search-form {
-  flex-basis: 100%;
-  display: flex;
-}
-
-.search-submit {
-  width: 28px;
-  height: 30px;
-  background-color: transparent;
-  border: none;
-  background-image: url('./images/search_submit.png');
-  color: transparent;
-  cursor: pointer;
-  padding-right: 5px;
-}
-
-.search-input-container {
-  padding-left: 15px;
-  flex-basis: 100%;
-}
-
-.search-input {
-  background-color: transparent;
-  border: none;
-  color: white;
-  height: 30px;
-  font-size: 24px;
-}
-
-.search-input:focus {
-  outline: none;
-}
 
 .menu-item-link_active:after {
   content: url('./images/expanded.png');

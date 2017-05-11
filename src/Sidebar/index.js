@@ -1,20 +1,12 @@
 import React from 'react';
 import Logo from './Logo';
+import Search from './Search';
 import './styles.css';
 
 export default () => (
   <aside className="sidebar">
     <Logo />
-    <div className="search-container">
-      <form className="search-form" name="search" action="" method="get">
-        <div className="search-submit-container">
-          <input type="submit" value="Search" className="search-submit" />
-        </div>
-        <div className="search-input-container">
-          <input title="Search" type="text" className="search-input" />
-        </div>
-      </form>
-    </div>
+    <Search />
     <nav className="menu">
       <div className="menu-item">
         <div className="menu-item-link menu-item-link_active">
