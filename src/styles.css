@@ -1,0 +1,566 @@
+body {
+  font-family: AvenirNext;
+}
+
+button {
+  outline: none;
+}
+
+.content-two-column {
+  display: flex;
+}
+
+[class*="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row {
+  display: flex;
+}
+
+.col-1 {
+  flex-basis: 8.33%;
+}
+
+.col-2 {
+  flex-basis: 16.66%;
+}
+
+.col-3 {
+  flex-basis: 24.99%;
+}
+
+.col-4 {
+  flex-basis: 33.32%;
+}
+
+.col-5 {
+  flex-basis: 41.65%;
+}
+
+.col-6 {
+  flex-basis: 49.98%;
+}
+
+.col-7 {
+  flex-basis: 58.31%;
+}
+
+.col-8 {
+  flex-basis: 66.64%;
+}
+
+.col-9 {
+  flex-basis: 74.97%;
+}
+
+.col-10 {
+  flex-basis: 83.3%;
+}
+
+.col-11 {
+  flex-basis: 91.63%;
+}
+
+.col-12 {
+  flex-basis: 100%;
+}
+
+.sidebar {
+  min-height: 1025px;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  flex-basis: 28.77%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  flex-basis: 71.23%;
+}
+
+.content-two-column {
+  margin: 0 auto;
+  max-width: 1439px;
+}
+
+.filter {
+  display: flex;
+  height: 77px;
+  border-bottom: 3px solid #e7e7e7;
+  align-items: center;
+  font-family: AvenirNext-Bold;
+  font-size: 24px;
+  color: #4d42f8;
+  font-weight: bold;
+}
+
+.filter-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #d6d6d6;
+  font-family: AvenirNext-Bold;
+  font-size: 24px;
+  padding: 0 0 0 0;
+}
+
+.filter-button-pressed {
+  color: #4d42f8;
+  font-weight: bold;
+}
+
+.filter-icon-wrapper {
+  padding-left: 24px;
+}
+
+.filter-icon-container {
+  height: 55px;
+  width: 55px;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-form {
+  display: flex;
+}
+
+.gender-filter {
+  padding-left: 30px;
+}
+
+.gender-filter .filter-button {
+  padding-right: 10px;
+}
+
+.size-filter {
+  padding-left: 50px;
+  display: flex;
+}
+
+.size-filter-name {
+  padding-right: 18px;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
+.logo {
+  height: 94px;
+  margin-top: 31px;
+}
+
+.menu {
+  font-size: 24px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.menu-sub-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0 0 0;
+}
+
+.menu .menu-item-link a, .menu .menu-sub-item a {
+  color: #303030;
+  text-decoration: none;
+}
+
+.menu .menu-item-link a:hover, .menu .menu-sub-item a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.menu .menu-item-link a {
+  font-family: AvenirNext-Bold;
+}
+
+.menu .menu-item-link.menu-item-link_active a, .menu .menu-sub-item.menu-sub-item_active {
+  color: #ffffff;
+}
+
+.menu-sub-items .menu-sub-item {
+  font-family: AndaleMono;
+  font-weight: normal;
+  margin-bottom: 25px;
+}
+
+.menu-sub-items .menu-sub-item:last-child {
+  margin-bottom: 10px;
+}
+
+.shoes-list-shoe {
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  height: 311px;
+  max-width: 311px;
+}
+
+.shoe-thumbnail-wrapper {
+  padding: 9px 9px 6px 9px;
+  flex-basis: 67.95%;
+  text-align: center;
+  display: flex;
+}
+
+.shoe-thumbnail-container {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sale-badge {
+  position: absolute;
+  text-transform: uppercase;
+  background-color: #ff5c5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #ffffff;
+  width: 76px;
+  height: 32px;
+  font-size: 14px;
+}
+
+.shoe-thumbnail-sale-badge {
+  top: 8px;
+  right: 8px;
+}
+
+.product-sale-badge {
+  top: 35px;
+  right: 31px;
+}
+
+.shoe-detail-link-wrapper {
+  display: flex;
+  padding: 0 9px 9px 9px;
+  flex-basis: 32.05%;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.shoe-thumbnail-link {
+  position: relative;
+}
+
+.shoe-detail-link-container {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.shoe-detail-link-container.shoe-detail-link-container-sale {
+  background-image: linear-gradient(to right, #0c09bf, #966dd8);
+  background-image: -webkit-linear-gradient(left, #0c09bf, #966dd8);
+  background-image: -webkit-gradient(linear, left top, right top, from(#0c09bf), to(#966dd8));
+}
+
+.shoe-detail-link {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoe-detail-link-container a.shoe-detail-link {
+  color: #111111;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: AvenirNext-Bold;
+}
+
+.shoe-detail-link-container.shoe-detail-link-container-sale a.shoe-detail-link {
+  color: #ffffff;
+}
+
+.shoes-list-row {
+  margin: 22px 0 24px 0;
+}
+
+.shoe-thumbnail {
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.search-container {
+  width: 89.37%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid #373737;
+  padding-bottom: 10px;
+  padding-left: 14px;
+}
+
+.search-form {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.search-submit {
+  width: 28px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  background-image: url('./images/search_submit.png');
+  color: transparent;
+  cursor: pointer;
+  padding-right: 5px;
+}
+
+.search-input-container {
+  padding-left: 15px;
+  flex-basis: 100%;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  height: 30px;
+  font-size: 24px;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.menu-item-link_active:after {
+  content: url('./images/expanded.png');
+  vertical-align: 10%;
+}
+
+.product {
+  position: relative;
+}
+
+.product-image {
+  padding: 51px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-heading {
+  position: absolute;
+  top: 26px;
+  left: 31px;
+  line-height: 1;
+  font-family: AvenirNext-Bold;
+  font-size: 64px;
+  color: #3a3a3a;
+  word-spacing: 9999999px;
+  margin: 0;
+}
+
+.save-button {
+  position: absolute;
+  top: 168px;
+  left: 28px;
+  width: 75px;
+  height: 75px;
+  background-color: #e3e3e3;
+  border: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: AvenirNext-Bold;
+  color: #ffffff;
+}
+
+.color-selector-panel {
+  position: absolute;
+  top: 42px;
+  right: 143px;
+}
+
+.color-selector-button {
+  border: none;
+  width: 18px;
+  height: 18px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  cursor: pointer;
+  color: transparent;
+  margin-right: 9px;
+  padding: 0;
+}
+
+.color-selector-button:last-child {
+  margin-right: 0;
+}
+
+.color-selector-button-gainsboro {
+  background-color: #e0e0e0;
+}
+
+.color-selector-button-charcoal {
+  background-color: #4a4a4a;
+}
+
+.color-selector-button-havelock-blue {
+  background-color: #4d87ca;
+}
+
+.color-selector-button-silver {
+  background-color: #c5c5c5;
+}
+
+.product-price {
+  position: absolute;
+  color: #e2e2e2;
+  font-family: AvenirNext-Bold;
+  font-size: 80px;
+  top: 87px;
+  right: 31px;
+  text-align: right;
+  margin: 0;
+  font-weight: normal;
+}
+
+.product-description {
+  font-size: 33px;
+  font-weight: 500;
+  line-height: 1.52;
+  text-align: left;
+  color: #d8d8d8;
+  padding: 0 64px 176px 34px;
+}
+
+.manufacturer {
+  color: #6e6e6e;
+}
+
+.product-thumbnails {
+  height: 119px;
+  display: flex;
+  flex-basis: 70%;
+}
+
+.product-thumbnail-container {
+  padding-right: 5px;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  flex-basis: 25%;
+}
+
+.product-thumbnail {
+  max-width: 100%;
+  max-height: 100%;
+  flex-shrink: 0;
+}
+
+.product-thumbnails-navigation {
+  display: flex;
+  padding-left: 34px;
+}
+
+.product-thumbnails-separator {
+  flex-basis: 22%;
+}
+
+.product-thumbnails-more-photo {
+  flex-basis: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.product-thumbnails-separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.separator-unit {
+  border-top: 3px solid #e7e7e7;
+  flex-basis: 3px;
+  width: 159px;
+  height: 3px;
+  line-height: 3px;
+}
+
+.product-thumbnail-active {
+  border: solid 5px #e8e8ea;
+}
+
+.product-thumbnail-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.more-photo-button {
+  color: #c0c0c0;
+  background-color: transparent;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: AvenirNext;
+}
+
+.product-buy-button-fixed-wrap {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.product-buy-button-centered {
+  position: relative;
+  max-width: 1439px;
+  margin: 0 auto;
+  height: 115px;
+
+}
+
+.product-buy-button {
+  background-image: linear-gradient(to right, #4949aa, #27275d);
+  background-image: -webkit-linear-gradient(left, #4949aa, #27275d);
+  background-image: -webkit-gradient(linear, left top, right top, from(#4949aa), to(#27275d));
+  height: 115px;
+  border: none;
+  cursor: pointer;
+  font-family: AvenirNext-Bold;
+  font-size: 32px;
+  padding: 0 0 0 0;
+  color: #ffffff;
+  position: absolute;
+  width: 71.23%;
+  max-width: 1256px;
+  right: 0;
+  bottom: 0;
+}
+
