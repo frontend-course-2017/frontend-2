@@ -1,33 +1,35 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './styles.css';
 
 export default () => (
   <nav className="menu">
     <div className="menu-item">
-      <div className="menu-item-link menu-item-link_active">
-        <a href="#">SPORTS</a>
+      <div className="menu-item-link">
+        <NavLink to="/sports/" activeClassName={'menu-item-link_active'}>SPORTS</NavLink>
       </div>
       <div className="menu-sub-items">
-        <div className="menu-sub-item menu-sub-item_active">
-          <span>SHOES</span>
+        <div className="menu-sub-item ">
+          <NavLink to="/sports/shoes/" activeClassName={'menu-sub-item_active'}>SHOES</NavLink>
         </div>
         <div className="menu-sub-item">
-          <a href="#">CLOTHING</a>
+          <NavLink to="/sports/clothing/" activeClassName={'menu-sub-item_active'}>CLOTHING</NavLink>
         </div>
         <div className="menu-sub-item">
-          <a href="#">ACCESORIES</a>
+          <NavLink to="/sports/accessories/" activeClassName={'menu-sub-item_active'}>ACCESORIES</NavLink>
         </div>
       </div>
     </div>
     <div className="menu-item">
       <div className="menu-item-link">
-        <a href="#">BRANDS</a>
+        <NavLink to="/brands/" activeClassName={'menu-item-link_active'}>BRANDS</NavLink>
       </div>
     </div>
     <div className="menu-item">
       <div className="menu-item-link">
-        <a href="#">MICOACH</a>
+        <NavLink to="/micoach/" activeClassName={'menu-item-link_active'}>MICOACH</NavLink>
       </div>
     </div>
   </nav>
 );
+
