@@ -4,8 +4,8 @@ import './styles.css';
 
 function renderMenuItems(items) {
   if (items.length > 0) {
-    return items.map((item) => (
-      <Item item={item} />
+    return items.map((item, index) => (
+      <Item key={index} item={item} />
     ));
   }
   return [];
