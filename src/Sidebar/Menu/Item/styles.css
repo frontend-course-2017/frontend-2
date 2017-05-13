@@ -5,13 +5,6 @@
   margin-bottom: 40px;
 }
 
-.menu-sub-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 15px 0 0 0;
-}
-
 .menu .menu-item-link a, .menu .menu-sub-item a {
   color: #303030;
   text-decoration: none;
@@ -28,16 +21,6 @@
 
 .menu a.menu-item-link_active, .menu .menu-sub-item .menu-sub-item_active {
   color: #ffffff;
-}
-
-.menu-sub-items .menu-sub-item {
-  font-family: AndaleMono;
-  font-weight: normal;
-  margin-bottom: 25px;
-}
-
-.menu-sub-items .menu-sub-item:last-child {
-  margin-bottom: 10px;
 }
 
 .menu-item-link_active:after {

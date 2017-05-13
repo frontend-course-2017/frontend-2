@@ -16,11 +16,24 @@ const menuItems = [
         text: 'SHOES',
         link: '/sports/shoes/',
       },
+      {
+        text: 'CLOTHING',
+        link: '/sports/clothing/',
+      },
+      {
+        text: 'ACCESSORIES',
+        link: '/sports/accessories/',
+      },
     ],
   },
   {
     text: 'BRANDS',
     link: '/brands/',
+    subItems: [],
+  },
+  {
+    text: 'MICOACH',
+    link: '/micoach/',
     subItems: [],
   },
 ];
