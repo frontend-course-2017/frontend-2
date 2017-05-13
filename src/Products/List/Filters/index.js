@@ -57,7 +57,7 @@ export default () => (
   <div className="filter">
     <Icon />
     <form className="filter-form" name="filter" action="" method="get">
-      <Gender items={genderItems}/>
+      <Gender items={genderItems} />
       <Size items={sizeItems} />
     </form>
   </div>

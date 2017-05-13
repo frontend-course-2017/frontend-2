@@ -1,129 +1,51 @@
 import React from 'react';
-// import './styles.css';
+import Item from './Item.js';
 
-export default () => (
-  <div className="shoes-list">
+
+function renderRowItems(items) {
+  if (items.length > 0) {
+    return items.map((item, index) => (
+      <div className="col-4">
+        <Item key={index} item={item} />
+      </div>
+    ));
+  }
+  return [];
+}
+
+function renderRow(items) {
+  const rowItems = renderRowItems(items);
+  return (
     <div className="shoes-list-row">
       <div className="row">
-        <div className="col-4">
-          <div className="shoes-list-shoe">
-            <div className="shoe-thumbnail-wrapper">
-              <div className="shoe-thumbnail-container">
-                <a className="shoe-thumbnail-link" href="#">
-                        <span className="sale-badge shoe-thumbnail-sale-badge">
-                            SALE
-                        </span>
-                  <img className="shoe-thumbnail" src="./images/big_shoe.jpg"/>
-                </a>
-              </div>
-            </div>
-            <div className="shoe-detail-link-wrapper">
-              <div className="shoe-detail-link-container shoe-detail-link-container-sale">
-                <a className="shoe-detail-link" href="#">
-                  $170
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-4">
-          <div className="shoes-list-shoe">
-            <div className="shoe-thumbnail-wrapper">
-              <div className="shoe-thumbnail-container">
-                <a href="#">
-                  <img className="shoe-thumbnail" src="./images/shoe_2.jpg"/>
-                </a>
-              </div>
-            </div>
-            <div className="shoe-detail-link-wrapper">
-              <div className="shoe-detail-link-container">
-                <a className="shoe-detail-link" href="#">
-                  $240.99
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-4">
-          <div className="shoes-list-shoe">
-            <div className="shoe-thumbnail-wrapper">
-              <div className="shoe-thumbnail-container">
-                <a href="#">
-                  <img className="shoe-thumbnail" src="./images/shoe_3.jpg"/>
-                </a>
-              </div>
-            </div>
-            <div className="shoe-detail-link-wrapper">
-              <div className="shoe-detail-link-container">
-                <a className="shoe-detail-link" href="#">
-                  $1024
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        {rowItems}
       </div>
     </div>
-    <div className="shoes-list-row">
-      <div className="row">
-        <div className="col-4">
-          <div className="shoes-list-shoe">
-            <div className="shoe-thumbnail-wrapper">
-              <div className="shoe-thumbnail-container">
-                <a href="#">
-                  <img className="shoe-thumbnail" src="./images/big_shoe.jpg"/>
-                </a>
-              </div>
-            </div>
-            <div className="shoe-detail-link-wrapper">
-              <div className="shoe-detail-link-container">
-                <a className="shoe-detail-link" href="#">
-                  $170
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-4">
-          <div className="shoes-list-shoe">
-            <div className="shoe-thumbnail-wrapper">
-              <div className="shoe-thumbnail-container">
-                <a className="shoe-thumbnail-link" href="#">
-                        <span className="sale-badge shoe-thumbnail-sale-badge">
-                            SALE
-                        </span>
-                  <img className="shoe-thumbnail" src="./images/shoe_2.jpg"/>
-                </a>
-              </div>
-            </div>
-            <div className="shoe-detail-link-wrapper">
-              <div className="shoe-detail-link-container shoe-detail-link-container-sale">
-                <a className="shoe-detail-link" href="#">
-                  $240.99
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-4">
-          <div className="shoes-list-shoe">
-            <div className="shoe-thumbnail-wrapper">
-              <div className="shoe-thumbnail-container">
-                <a href="#">
-                  <img className="shoe-thumbnail" src="./images/shoe_3.jpg"/>
-                </a>
-              </div>
-            </div>
-            <div className="shoe-detail-link-wrapper">
-              <div className="shoe-detail-link-container">
-                <a className="shoe-detail-link" href="#">
-                  $1024
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+  );
+}
+
+
+function renderItems(items) {
+  if (items.length > 0) {
+    let rowItems,
+      chunkSize = 3,
+      rows = [];
+    for (let i = 0; i < items.length; i += chunkSize) {
+      rowItems = items.slice(i, i + chunkSize);
+      rows.push(renderRow(rowItems));
+    }
+    return rows;
+  }
+  return [];
+}
+
+function Items({ items }) {
+  const products = renderItems(items);
+  return (
+    <div className="shoes-list">
+      {products}
     </div>
-  </div>
-);
+  );
+}
+
+module.exports = Items;
