@@ -38,7 +38,7 @@ const product = {
       name: 'Charcoal',
     },
   ],
-  description: '<span class="manufacturer">Adidas<\/span> is a German multinational corporation, ' +
+  description: 'Adidas is a German multinational corporation, ' +
   'headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing and accessories.',
   sale: true,
 };
