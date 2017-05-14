@@ -7,7 +7,7 @@ function Item({ item }) {
       <div className="shoe-thumbnail-wrapper">
         <div className="shoe-thumbnail-container">
           <a className="shoe-thumbnail-link" href={item.link}>
-            <SaleBadge sale={item.sale} additionalClass={'shoe-thumbnail-sale-badge'} />
+            <SaleBadge sale={item.sale} className={'shoe-thumbnail-sale-badge'} />
             <img className="shoe-thumbnail" src={require(item.imgSrc)} />
           </a>
         </div>

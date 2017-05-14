@@ -49,7 +49,7 @@ export default () => (
       <Heading text={product.name} />
       <Save />
       <ColorSelector colors={product.colors} />
-      <SaleBadge sale={product.sale} additionalClass={'product-sale-badge'} />
+      <SaleBadge sale={product.sale} className={'product-sale-badge'} />
       <Price value={product.price} />
       <Image src={product.imgSrc} />
       <Thumbnails srcs={product.thumbnails} />
