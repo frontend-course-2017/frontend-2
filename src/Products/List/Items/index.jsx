@@ -1,47 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Row, Col } from 'react-flexbox-grid';
 import Item from '../Item';
-
 
 const renderRowItems = (items = []) => (
    items.map(item => (
-     <div className="col-4">
+     <Col xs={12} sm={6} md={4} lg={3}>
        <Item key={item.id} item={item} />
-     </div>
+     </Col>
    ))
 );
 
-function renderRow(items) {
-  const rowItems = renderRowItems(items);
-  return (
-    <div className="shoes-list-row">
-      <div className="row">
-        {rowItems}
-      </div>
-    </div>
-  );
-}
-
-function renderItems(items = []) {
-  let rowItems;
-  const chunkSize = 3;
-  const rows = [];
-  for (let i = 0; i < items.length; i += chunkSize) {
-    rowItems = items.slice(i, i + chunkSize);
-    rows.push(renderRow(rowItems));
-  }
-  return rows;
-}
-
 function Items({ items }) {
-  const products = renderItems(items);
+  const products = renderRowItems(items);
   return (
     <div className="shoes-list">
-      {products}
+      <Row>
+        {products}
+      </Row>
     </div>
   );
 }
-
 
 Items.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,

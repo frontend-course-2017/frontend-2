@@ -147,6 +147,7 @@ button {
   flex-direction: column;
   height: 311px;
   max-width: 311px;
+  margin: 22px 0 24px 0;
 }
 
 .shoe-thumbnail-wrapper {
