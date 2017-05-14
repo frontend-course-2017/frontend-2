@@ -18,4 +18,4 @@ SaleBadge.propTypes = {
   className: PropTypes.string.isRequired,
 };
 
-module.exports = SaleBadge;
+export default SaleBadge;

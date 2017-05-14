@@ -27,4 +27,4 @@ SubItems.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-module.exports = SubItems;
+export default SubItems;

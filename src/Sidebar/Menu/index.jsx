@@ -25,5 +25,5 @@ Menu.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-module.exports = Menu;
+export default Menu;
 

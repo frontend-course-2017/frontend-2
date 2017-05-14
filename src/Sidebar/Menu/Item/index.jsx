@@ -18,4 +18,4 @@ Item.propTypes = {
   item: React.PropTypes.string.isRequired,
 };
 
-module.exports = Item;
+export default Item;

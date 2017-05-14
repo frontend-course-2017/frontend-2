@@ -13,4 +13,4 @@ function Icon() {
   );
 }
 
-module.exports = Icon;
+export default Icon;

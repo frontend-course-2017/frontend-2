@@ -28,4 +28,4 @@ Size.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-module.exports = Size;
+export default Size;

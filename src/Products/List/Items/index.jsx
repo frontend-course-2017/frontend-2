@@ -53,4 +53,4 @@ Items.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-module.exports = Items;
+export default Items;

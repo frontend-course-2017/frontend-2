@@ -13,5 +13,5 @@ SubItem.propTypes = {
   item: React.PropTypes.string.isRequired,
 };
 
-module.exports = SubItem;
+export default SubItem;
 

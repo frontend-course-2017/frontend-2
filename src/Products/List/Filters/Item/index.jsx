@@ -17,4 +17,4 @@ Item.propTypes = {
   }).isRequired,
 };
 
-module.exports = Item;
+export default Item;
