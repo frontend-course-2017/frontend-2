@@ -6,18 +6,15 @@ import MorePhotoButton from './MorePhotoButton';
 
 const shortid = require('shortid');
 
-function renderItems(srcs) {
-  if (srcs.length > 0) {
-    return srcs.map(src => (
-      <div key={shortid.generate()} className="product-thumbnail-container">
-        <button className="product-thumbnail-button">
-          <img alt={''} className="product-thumbnail" src={src} />
-        </button>
-      </div>
-    ));
-  }
-  return [];
-}
+const renderItems = (srcs = []) => (
+  srcs.map(src => (
+    <div key={shortid.generate()} className="product-thumbnail-container">
+      <button className="product-thumbnail-button">
+        <img alt={''} className="product-thumbnail" src={src} />
+      </button>
+    </div>
+  ))
+);
 
 const Detail = ({ srcs }) => (
   <form name="product-thumbnails-navigation-form" method="get" action="#">

@@ -3,14 +3,9 @@ import PropTypes from 'prop-types';
 import Item from './Item';
 import './styles.css';
 
-function renderMenuItems(items) {
-  if (items.length > 0) {
-    return items.map(item => (
-      <Item key={item.id} item={item} />
-    ));
-  }
-  return [];
-}
+const renderMenuItems = (items = []) => (
+  items.map(item => <Item key={item.id} item={item} />)
+);
 
 function Menu({ items }) {
   const menuItems = renderMenuItems(items);

@@ -3,16 +3,13 @@ import PropTypes from 'prop-types';
 import Item from '../Item';
 
 
-function renderRowItems(items) {
-  if (items.length > 0) {
-    return items.map(item => (
-      <div className="col-4">
-        <Item key={item.id} item={item} />
-      </div>
-    ));
-  }
-  return [];
-}
+const renderRowItems = (items = []) => (
+   items.map(item => (
+     <div className="col-4">
+       <Item key={item.id} item={item} />
+     </div>
+   ))
+);
 
 function renderRow(items) {
   const rowItems = renderRowItems(items);
@@ -25,18 +22,15 @@ function renderRow(items) {
   );
 }
 
-function renderItems(items) {
-  if (items.length > 0) {
-    let rowItems;
-    const chunkSize = 3;
-    const rows = [];
-    for (let i = 0; i < items.length; i += chunkSize) {
-      rowItems = items.slice(i, i + chunkSize);
-      rows.push(renderRow(rowItems));
-    }
-    return rows;
+function renderItems(items = []) {
+  let rowItems;
+  const chunkSize = 3;
+  const rows = [];
+  for (let i = 0; i < items.length; i += chunkSize) {
+    rowItems = items.slice(i, i + chunkSize);
+    rows.push(renderRow(rowItems));
   }
-  return [];
+  return rows;
 }
 
 function Items({ items }) {

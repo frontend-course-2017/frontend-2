@@ -3,14 +3,9 @@ import PropTypes from 'prop-types';
 
 import Item from '../Item';
 
-function renderSizeItems(items) {
-  if (items.length > 0) {
-    return items.map(item => (
-      <Item key={item.name} item={item} />
-    ));
-  }
-  return [];
-}
+const renderSizeItems = (items = []) => (
+   items.map(item => <Item key={item.name} item={item} />)
+);
 
 function Size({ items }) {
   const filterItems = renderSizeItems(items);

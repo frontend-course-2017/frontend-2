@@ -4,14 +4,9 @@ import PropTypes from 'prop-types';
 import SubItem from './SubItem';
 import './styles.css';
 
-function renderSubMenuItems(items) {
-  if (items.length > 0) {
-    return items.map(item => (
-      <SubItem key={item.id} item={item} />
-    ));
-  }
-  return [];
-}
+const renderSubMenuItems = (items = []) => (
+  items.map(item => <SubItem key={item.id} item={item} />)
+);
 
 function SubItems({ items }) {
   const menuSubItems = renderSubMenuItems(items);

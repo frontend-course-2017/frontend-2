@@ -2,14 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Item from '../Item';
 
-function renderGenderItems(items) {
-  if (items.length > 0) {
-    return items.map(item => (
-      <Item key={item.name} item={item} />
-    ));
-  }
-  return [];
-}
+const renderGenderItems = items => (
+  items.map(item => <Item key={item.name} item={item} />)
+);
 
 function Gender({ items }) {
   const filterItems = renderGenderItems(items);
