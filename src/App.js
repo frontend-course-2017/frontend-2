@@ -3,11 +3,11 @@ import {
   BrowserRouter as Router,
   Route,
 } from 'react-router-dom';
+require('normalize-css');
 
 import Sidebar from './Sidebar';
 import ProductsList from './Products/List';
 import ProductDetail from './Products/Detail';
-import './normalize.css';
 import './fonts.css';
 import './style.css';
 
