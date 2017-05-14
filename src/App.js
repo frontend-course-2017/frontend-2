@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import './styles.css';
+
 import Sidebar from './Sidebar';
 import ProductsList from './Products/List';
-
+import './normalize.css';
+import './fonts.css';
+import './style.css';
 
 class App extends Component {
   render() {
