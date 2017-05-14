@@ -1,5 +1,7 @@
 import React from 'react';
-import SaleBadge from './SaleBadge.js';
+import PropTypes from 'prop-types';
+import SaleBadge from '../SaleBadge';
+
 
 function Item({ item }) {
   return (
@@ -8,7 +10,7 @@ function Item({ item }) {
         <div className="shoe-thumbnail-container">
           <a className="shoe-thumbnail-link" href={item.link}>
             <SaleBadge sale={item.sale} className={'shoe-thumbnail-sale-badge'} />
-            <img className="shoe-thumbnail" src={require(item.imgSrc)} />
+            <img className="shoe-thumbnail" alt={''} src={item.imgSrc} />
           </a>
         </div>
       </div>
@@ -22,5 +24,15 @@ function Item({ item }) {
     </div>
   );
 }
+
+Item.propTypes = {
+  item: PropTypes.shape({
+    price: PropTypes.string.isRequired,
+    imgSrc: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+    sale: PropTypes.bool.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
+};
 
 module.exports = Item;

@@ -1,12 +1,13 @@
 import React from 'react';
-import Item from './Item.js';
+import PropTypes from 'prop-types';
+import Item from '../Item';
 
 
 function renderRowItems(items) {
   if (items.length > 0) {
-    return items.map((item, index) => (
+    return items.map(item => (
       <div className="col-4">
-        <Item key={index} item={item} />
+        <Item key={item.id} item={item} />
       </div>
     ));
   }
@@ -24,12 +25,11 @@ function renderRow(items) {
   );
 }
 
-
 function renderItems(items) {
   if (items.length > 0) {
-    let rowItems,
-      chunkSize = 3,
-      rows = [];
+    let rowItems;
+    const chunkSize = 3;
+    const rows = [];
     for (let i = 0; i < items.length; i += chunkSize) {
       rowItems = items.slice(i, i + chunkSize);
       rows.push(renderRow(rowItems));
@@ -47,5 +47,10 @@ function Items({ items }) {
     </div>
   );
 }
+
+
+Items.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 module.exports = Items;

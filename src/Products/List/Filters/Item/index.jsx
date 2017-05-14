@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Item({ item }) {
   return (
@@ -7,5 +8,13 @@ function Item({ item }) {
     </button>
   );
 }
+
+Item.propTypes = {
+  item: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    active: PropTypes.bool.isRequired,
+  }).isRequired,
+};
 
 module.exports = Item;

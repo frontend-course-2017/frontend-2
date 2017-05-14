@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function SaleBadge({ sale, className }) {
   if (!sale) {
@@ -11,5 +12,10 @@ function SaleBadge({ sale, className }) {
     </span>
   );
 }
+
+SaleBadge.propTypes = {
+  sale: PropTypes.bool.isRequired,
+  className: PropTypes.string.isRequired,
+};
 
 module.exports = SaleBadge;

@@ -14,4 +14,8 @@ function Item({ item }) {
   );
 }
 
+Item.propTypes = {
+  item: React.PropTypes.string.isRequired,
+};
+
 module.exports = Item;

@@ -8,16 +8,16 @@ import Price from './Price';
 import ColorSelector from './ColorSelector';
 import Save from './Save';
 import Heading from './Heading';
-import SaleBadge from '../List/SaleBadge.js';
+import SaleBadge from '../List/SaleBadge';
 
 const product = {
   price: '170$',
-  imgSrc: './images/shoe_detail.jpg',
+  imgSrc: '/images/shoe_detail.jpg',
   thumbnails: [
-    './images/thumbnail_1.jpg',
-    './images/big_shoe.jpg',
-    './images/thumbnail_2.jpg',
-    './images/thumbnail_3.jpg',
+    '/images/thumbnail_1.jpg',
+    '/images/big_shoe.jpg',
+    '/images/thumbnail_2.jpg',
+    '/images/thumbnail_3.jpg',
   ],
   name: 'ULTRA BOOST',
   colors: [

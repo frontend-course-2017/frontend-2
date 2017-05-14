@@ -1,10 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import Item from '../Item';
 
 function renderSizeItems(items) {
   if (items.length > 0) {
-    return items.map((item, index) => (
-      <Item key={index} item={item} />
+    return items.map(item => (
+      <Item key={item.name} item={item} />
     ));
   }
   return [];
@@ -21,5 +23,9 @@ function Size({ items }) {
     </div>
   );
 }
+
+Size.propTypes = {
+  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 module.exports = Size;
