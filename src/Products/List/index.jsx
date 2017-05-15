@@ -1,6 +1,6 @@
 import React from 'react';
 import Filter from './Filters';
-import Items from './Items';
+import Cards from './Cards';
 
 const products = [
   {
@@ -50,7 +50,7 @@ const products = [
 export default () => (
   <section className="content">
     <Filter />
-    <Items items={products} />
+    <Cards items={products} />
   </section>
 );
 

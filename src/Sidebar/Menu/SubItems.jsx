@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import SubItem from './SubItem';
-import './styles.css';
 
 const renderSubMenuItems = (items = []) => (
   items.map(item => <SubItem key={item.id} item={item} />)

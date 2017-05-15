@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'react-flexbox-grid';
-import Item from '../Item';
+import Item from './Card';
 
 const renderRowItems = (items = []) => (
    items.map(item => (
@@ -11,7 +11,7 @@ const renderRowItems = (items = []) => (
    ))
 );
 
-function Items({ items }) {
+function Cards({ items }) {
   const products = renderRowItems(items);
   return (
     <div className="shoes-list">
@@ -22,8 +22,8 @@ function Items({ items }) {
   );
 }
 
-Items.propTypes = {
+Cards.propTypes = {
   items: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-export default Items;
+export default Cards;

@@ -6,9 +6,9 @@ import Thumbnails from './Thumbnails';
 import Image from './Image';
 import Price from './Price';
 import ColorSelector from './ColorSelector';
-import Save from './Save';
+import SaveButton from './SaveButton';
 import Heading from './Heading';
-import SaleBadge from '../List/SaleBadge';
+import SaleBadge from '../../components/SaleBadge';
 
 const product = {
   price: '170$',
@@ -63,7 +63,7 @@ export default () => (
   <section className="content">
     <div className="product">
       <Heading text={product.name} />
-      <Save />
+      <SaveButton />
       <ColorSelector colors={product.colors} />
       <SaleBadge sale={product.sale} className={'product-sale-badge'} />
       <Price value={product.price} />

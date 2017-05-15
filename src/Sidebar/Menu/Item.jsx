@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import SubItems from './SubItems';
-import './styles.css';
 
 function Item({ item }) {
   return (

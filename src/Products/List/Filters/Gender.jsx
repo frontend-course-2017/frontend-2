@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Item from '../Item';
+import Item from './Button';
 
 const renderGenderItems = items => (
   items.map(item => <Item key={item.name} item={item} />)

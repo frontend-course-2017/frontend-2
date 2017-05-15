@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Item({ item }) {
+function Button({ item }) {
   return (
     <button name={item.name} className={`filter-button ${item.active ? 'filter-button-pressed' : ''}`}>
       {item.text}
@@ -9,7 +9,7 @@ function Item({ item }) {
   );
 }
 
-Item.propTypes = {
+Button.propTypes = {
   item: PropTypes.shape({
     name: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired,
@@ -17,4 +17,4 @@ Item.propTypes = {
   }).isRequired,
 };
 
-export default Item;
+export default Button;

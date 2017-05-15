@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SaleBadge from '../SaleBadge';
+import SaleBadge from '../../components/SaleBadge';
 
 
-function Item({ item }) {
+function Card({ item }) {
   return (
     <div className="shoes-list-shoe">
       <div className="shoe-thumbnail-wrapper">
@@ -25,7 +25,7 @@ function Item({ item }) {
   );
 }
 
-Item.propTypes = {
+Card.propTypes = {
   item: PropTypes.shape({
     price: PropTypes.string.isRequired,
     imgSrc: PropTypes.string.isRequired,
@@ -35,4 +35,4 @@ Item.propTypes = {
   }).isRequired,
 };
 
-export default Item;
+export default Card;
