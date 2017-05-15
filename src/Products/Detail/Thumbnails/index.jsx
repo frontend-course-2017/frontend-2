@@ -4,13 +4,11 @@ import PropTypes from 'prop-types';
 import Separator from './Separator';
 import MorePhotoButton from './MorePhotoButton';
 
-const shortid = require('shortid');
-
 const renderItems = (srcs = []) => (
   srcs.map(src => (
-    <div key={shortid.generate()} className="product-thumbnail-container">
+    <div key={src.id} className="product-thumbnail-container">
       <button className="product-thumbnail-button">
-        <img alt={''} className="product-thumbnail" src={src} />
+        <img alt={''} className="product-thumbnail" src={src.src} />
       </button>
     </div>
   ))
@@ -30,7 +28,7 @@ const Detail = ({ srcs }) => (
 
 
 Detail.propTypes = {
-  srcs: PropTypes.arrayOf(PropTypes.string).isRequired,
+  srcs: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Detail;

@@ -1,11 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const shortid = require('shortid');
-
 const renderItems = (colors = []) => (
   colors.map(color => (
-    <button key={shortid.generate()} className={`color-selector-button ${color.className}`}>
+    <button key={color.id} className={`color-selector-button ${color.className}`}>
       {color.name}
     </button>
   ))

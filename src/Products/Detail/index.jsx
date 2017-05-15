@@ -14,28 +14,44 @@ const product = {
   price: '170$',
   imgSrc: '/images/shoe_detail.jpg',
   thumbnails: [
-    '/images/thumbnail_1.jpg',
-    '/images/big_shoe.jpg',
-    '/images/thumbnail_2.jpg',
-    '/images/thumbnail_3.jpg',
+    {
+      src: '/images/thumbnail_1.jpg',
+      id: 1,
+    },
+    {
+      src: '/images/big_shoe.jpg',
+      id: 2,
+    },
+    {
+      src: '/images/thumbnail_2.jpg',
+      id: 3,
+    },
+    {
+      src: '/images/thumbnail_3.jpg',
+      id: 4,
+    },
   ],
   name: 'ULTRA BOOST',
   colors: [
     {
       className: 'color-selector-button-silver',
       name: 'Silver',
+      id: 1,
     },
     {
       className: 'color-selector-button-havelock-blue',
       name: 'Havelock blue',
+      id: 2,
     },
     {
       className: 'color-selector-button-gainsboro',
       name: 'Gainsboro',
+      id: 3,
     },
     {
       className: 'color-selector-button-charcoal',
       name: 'Charcoal',
+      id: 4,
     },
   ],
   description: 'Adidas is a German multinational corporation, ' +
