@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import SubItems from './SubItems';
 
@@ -14,7 +15,11 @@ function Item({ item }) {
 }
 
 Item.propTypes = {
-  item: React.PropTypes.string.isRequired,
+  item: PropTypes.shape({
+    link: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    subItems: PropTypes.arrayOf(PropTypes.object).isRequired,
+  }).isRequired,
 };
 
 export default Item;
