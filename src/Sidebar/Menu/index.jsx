@@ -1,23 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Item from './Item';
+import NavigationItem from './NavigationItem';
 
-const renderMenuItems = (items = []) => (
-  items.map(item => <Item key={item.id} item={item} />)
+const Menu = () => (
+  <nav className="menu">
+    <NavigationItem link={'/sports/'} text={'SHOES'} hasSubItems />
+    <NavigationItem link={'/brands/'} text={'BRANDS'} hasSubItems={false} />
+    <NavigationItem link={'/micoach/'} text={'MICOACH'} hasSubItems={false} />
+  </nav>
 );
-
-function Menu({ items }) {
-  const menuItems = renderMenuItems(items);
-  return (
-    <nav className="menu">
-      {menuItems}
-    </nav>
-  );
-}
-
-Menu.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
 
 export default Menu;
 

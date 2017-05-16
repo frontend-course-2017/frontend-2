@@ -3,22 +3,17 @@ import PropTypes from 'prop-types';
 
 import SubItem from './SubItem';
 
-const renderSubMenuItems = (items = []) => (
-  items.map(item => <SubItem key={item.id} item={item} />)
+const SubItems = ({ show }) => (
+  show &&
+  <div className="menu-sub-items">
+    <SubItem text={'SHOES'} link={'/sports/shoes/'} />
+    <SubItem text={'CLOTHING'} link={'/sports/clothing/'} />
+    <SubItem text={'ACCESSORIES'} link={'/sports/accessories/'} />
+  </div>
 );
 
-function SubItems({ items }) {
-  const menuSubItems = renderSubMenuItems(items);
-  return (
-    <div className="menu-sub-items">
-      {menuSubItems}
-    </div>
-  );
-}
-
-
 SubItems.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
+  show: PropTypes.string.isRequired,
 };
 
 export default SubItems;

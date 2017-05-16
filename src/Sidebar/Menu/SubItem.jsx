@@ -2,19 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 
-function SubItem({ item }) {
-  return (
-    <div className="menu-sub-item">
-      <NavLink to={item.link} activeClassName={'menu-sub-item_active'}>{item.text}</NavLink>
-    </div>
-  );
-}
+const SubItem = ({ link, text }) => (
+  <div className="menu-sub-item">
+    <NavLink to={link} activeClassName={'menu-sub-item_active'}>{text}</NavLink>
+  </div>
+);
 
 SubItem.propTypes = {
-  item: PropTypes.shape({
-    link: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-  }).isRequired,
+  link: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default SubItem;
