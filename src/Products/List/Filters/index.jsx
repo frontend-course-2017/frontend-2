@@ -7,9 +7,9 @@ import Size from './Size';
 export default () => (
   <Filter>
     <Icon />
-    <form className="filter-form" name="filter" action="" method="get">
+    <Form name="filter" action="" method="get">
       <Gender />
       <Size />
-    </form>
+    </Form>
   </Filter>
 );

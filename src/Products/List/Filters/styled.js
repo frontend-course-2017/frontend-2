@@ -41,10 +41,10 @@ const StyledButton = styled.button`
   font-size: 24px;
   padding: 0 0 0 0;
   margin-right: 6px;
-  color: ${props => props.active ? '#4d42f8' : '#d6d6d6'};
-  font-weight: ${props => props.active ? 'bold' : 'normal'};
+  color: ${props => (props.active ? '#4d42f8' : '#d6d6d6')};
+  font-weight: ${props => (props.active ? 'bold' : 'normal')};
   
-  padding-right: ${props => props.genderFilter ? '10px' : ''};
+  padding-right: ${props => (props.genderFilter ? '10px' : '')};
 `;
 
 const Size = styled.div`
@@ -74,4 +74,5 @@ export {
   Size,
   SizeLabel,
   Sizes,
+  Form,
 };
