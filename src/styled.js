@@ -10,4 +10,8 @@ const ContentTwoColumn = styled.main`
   display: flex;
 `;
 
-export { Wrapper, ContentTwoColumn };
+const Content = styled.section`
+  flex-basis: 71.23%;
+`;
+
+export { Wrapper, ContentTwoColumn, Content };

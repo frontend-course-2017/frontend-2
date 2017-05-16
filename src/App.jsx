@@ -8,20 +8,20 @@ import 'normalize.css';
 import Sidebar from './Sidebar';
 import ProductsList from './Products/List';
 import ProductDetail from './Products/Detail';
-import { Wrapper, ContentTwoColumn } from './styled';
+import { Wrapper, ContentTwoColumn, Content } from './styled';
 import './fonts.css';
-import './styles.css';
 
 const App = () => (
   <Router>
     <Wrapper>
       <ContentTwoColumn>
         <Sidebar />
-
-        <Route exact path="/" component={ProductsList} />
-        <Route exact path="/sports/" component={ProductsList} />
-        <Route exact path="/sports/shoes/" component={ProductsList} />
-        <Route exact path="/sports/shoes/shoe-1/" component={ProductDetail} />
+        <Content>
+          <Route exact path="/" component={ProductsList} />
+          <Route exact path="/sports/" component={ProductsList} />
+          <Route exact path="/sports/shoes/" component={ProductsList} />
+          <Route exact path="/sports/shoes/shoe-1/" component={ProductDetail} />
+        </Content>
       </ContentTwoColumn>
     </Wrapper>
   </Router>

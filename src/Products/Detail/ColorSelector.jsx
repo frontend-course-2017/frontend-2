@@ -1,20 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Panel, ColorButton } from './styled';
 
 const renderItems = (colors = []) => (
   colors.map(color => (
-    <button key={color.id} className={`color-selector-button ${color.className}`}>
+    <ColorButton key={color.id} color={color.code} >
       {color.name}
-    </button>
+    </ColorButton>
   ))
 );
 
 const ColorSelector = ({ colors }) => (
-  <div className="color-selector-panel">
+  <Panel>
     <form name="color-selector-form" method="get" action="">
       { renderItems(colors)}
     </form>
-  </div>
+  </Panel>
 );
 
 ColorSelector.propTypes = {

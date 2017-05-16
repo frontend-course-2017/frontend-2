@@ -2,9 +2,6 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'react-flexbox-grid';
 
-const Content = styled.section`
-  flex-basis: 71.23%;
-`;
 
 const ShoesList = styled.div`
   
@@ -16,7 +13,7 @@ const ShoesListShoe = styled.div`
   flex-direction: column;
   height: 311px;
   max-width: 311px;
-  margin: 22px 0 24px 0;
+  margin: 0 0 24px 0;
 `;
 
 const ThumbnailWrapper = styled.div`
@@ -102,7 +99,6 @@ const ShoeCol = styled(Col)`
 `;
 
 export {
-  Content,
   ShoesList,
   ShoesListShoe,
   ThumbnailWrapper,

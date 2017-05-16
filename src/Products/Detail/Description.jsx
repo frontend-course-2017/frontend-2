@@ -1,16 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Description } from './styled';
 
-const Description = ({ text }) => (
-  <div className="product-description">
+export default (props) => (
+  <Description>
     <p>
-      {text}
+      {props.children}
     </p>
-  </div>
+  </Description>
 );
 
-Description.propTypes = {
-  text: PropTypes.string.isRequired,
-};
-
-export default Description;

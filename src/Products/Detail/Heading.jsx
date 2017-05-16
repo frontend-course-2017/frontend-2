@@ -1,12 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Heading } from './styled';
 
-const Heading = ({ text }) => (
-  <h1 className="product-heading">{text}</h1>
+export default (props) => (
+  <Heading>{props.children}</Heading>
 );
 
-Heading.propTypes = {
-  text: PropTypes.string.isRequired,
-};
-
-export default Heading;

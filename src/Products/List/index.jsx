@@ -1,7 +1,6 @@
 import React from 'react';
 import Filter from './Filters';
 import Cards from './Cards';
-import { Content } from './styled';
 
 const products = [
   {
@@ -49,9 +48,9 @@ const products = [
 ];
 
 export default () => (
-  <Content>
+  <div>
     <Filter />
     <Cards items={products} />
-  </Content>
+  </div>
 );
 

@@ -9,6 +9,7 @@ const Filter = styled.div`
   font-size: 24px;
   color: #4d42f8;
   font-weight: bold;
+  margin-bottom: 22px;
 `;
 
 const IconWrapper = styled.div`
@@ -34,6 +35,7 @@ const Gender = styled.div`
 `;
 
 const StyledButton = styled.button`
+  outline: none;
   border: none;
   background-color: transparent;
   cursor: pointer;

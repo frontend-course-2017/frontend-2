@@ -1,11 +1,12 @@
 import React from 'react';
+import { ButtonWrap, ButtonCentered, BuyButton } from './styled';
 
 export default () => (
-  <div className="product-buy-button-fixed-wrap">
-    <div className="product-buy-button-centered">
-      <button className="product-buy-button">
+  <ButtonWrap>
+    <ButtonCentered>
+      <BuyButton>
         BUY NOW
-      </button>
-    </div>
-  </div>
+      </BuyButton>
+    </ButtonCentered>
+  </ButtonWrap>
 );

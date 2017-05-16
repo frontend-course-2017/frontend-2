@@ -3,26 +3,33 @@ import PropTypes from 'prop-types';
 
 import Separator from './Separator';
 import MorePhotoButton from './MorePhotoButton';
+import {
+  Navigation,
+  Thumbnails,
+  Picker,
+  Container,
+  Thumbnail,
+} from './styled';
 
 const renderItems = (srcs = []) => (
   srcs.map(src => (
-    <div key={src.id} className="product-thumbnail-container">
-      <button className="product-thumbnail-button">
-        <img alt={''} className="product-thumbnail" src={src.src} />
-      </button>
-    </div>
+    <Container key={src.id}>
+      <Picker>
+        <Thumbnail alt={''} active={src.active} src={src.src} />
+      </Picker>
+    </Container>
   ))
 );
 
 const Detail = ({ srcs }) => (
   <form name="product-thumbnails-navigation-form" method="get" action="#">
-    <div className="product-thumbnails-navigation">
-      <div className="product-thumbnails">
+    <Navigation>
+      <Thumbnails>
         {renderItems(srcs)}
-      </div>
+      </Thumbnails>
       <Separator />
       <MorePhotoButton />
-    </div>
+    </Navigation>
   </form>
 );
 

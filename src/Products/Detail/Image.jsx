@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Picture } from './styled';
 
 const Image = ({ src }) => (
-  <div className="product-image">
+  <Picture>
     <img alt={''} src={src} />
-  </div>
+  </Picture>
 );
 
 Image.propTypes = {

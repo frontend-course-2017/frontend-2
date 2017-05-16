@@ -15,6 +15,7 @@ const SaleLabel = styled.span`
   font-size: 14px;
   top: ${props => (props.isInList ? '8px' : '35px')};
   right: ${props => (props.isInList ? '8px' : '31px')};
+  font-family: AvenirNext;
 `;
 
 SaleLabel.propTypes = {

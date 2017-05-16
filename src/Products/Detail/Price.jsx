@@ -1,14 +1,9 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Price } from './styled';
 
-const Price = ({ value }) => (
-  <h2 className="product-price">
-    {value}
-  </h2>
+export default (props) => (
+  <Price>
+    {props.children}
+  </Price>
 );
 
-Price.propTypes = {
-  value: PropTypes.string.isRequired,
-};
-
-export default Price;
