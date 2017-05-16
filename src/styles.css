@@ -6,6 +6,7 @@ button {
   outline: none;
 }
 
+
 .content-two-column {
   display: flex;
 }
@@ -17,6 +18,7 @@ button {
 
 .row {
   display: flex;
+  margin: 0;
 }
 
 .col-1 {
@@ -95,6 +97,7 @@ button {
   font-family: AvenirNext-Bold;
   font-size: 24px;
   padding: 0 0 0 0;
+  margin-right: 6px;
 }
 
 .filter-button-pressed {

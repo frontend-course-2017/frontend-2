@@ -99,6 +99,7 @@
 .menu-item-link_active:after {
   content: url('./images/expanded.png');
   vertical-align: 10%;
+  margin-left: 5px;
 }
 
 
