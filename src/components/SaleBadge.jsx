@@ -1,16 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import SaleLabel from './styled';
 
-const SaleBadge = ({ sale, className }) => (
+const SaleBadge = ({ sale, isInList }) => (
   sale &&
-  <span className={`sale-badge ${className}`}>
+  <SaleLabel isInList={isInList}>
     SALE
-  </span>
+  </SaleLabel>
 );
 
 SaleBadge.propTypes = {
   sale: PropTypes.bool.isRequired,
-  className: PropTypes.string.isRequired,
+  isInList: PropTypes.bool,
+};
+
+SaleLabel.defaultProps = {
+  isInList: false,
 };
 
 export default SaleBadge;
