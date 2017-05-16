@@ -1,10 +1,10 @@
 import React from 'react';
 import Button from './Button';
-import { Size, SizeLabel, Sizes } from './styled';
+import { Size, Label, Sizes } from './styled';
 
 export default () => (
   <Size>
-    <SizeLabel>SIZE</SizeLabel>
+    <Label>SIZE</Label>
     <Sizes>
       <Button name={'size-36'} active={false} text={'36'} />
       <Button name={'size-37'} active={false} text={'37'} />

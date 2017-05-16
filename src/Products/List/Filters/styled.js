@@ -54,7 +54,7 @@ const Size = styled.div`
   display: flex;
 `;
 
-const SizeLabel = styled.div`
+const Label = styled.div`
   padding-right: 18px;
 `;
 
@@ -74,7 +74,7 @@ export {
   Gender,
   StyledButton,
   Size,
-  SizeLabel,
+  Label,
   Sizes,
   Form,
 };
