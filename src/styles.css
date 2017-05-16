@@ -7,9 +7,6 @@ button {
 }
 
 
-.content-two-column {
-  display: flex;
-}
 
 [class*="col-"] {
   padding-left: 15px;
@@ -73,11 +70,6 @@ button {
   flex-basis: 71.23%;
 }
 
-.content-two-column {
-  margin: 0 auto;
-  max-width: 1439px;
-}
-
 .filter {
   display: flex;
   height: 77px;
@@ -138,10 +130,6 @@ button {
 
 .size-filter-name {
   padding-right: 18px;
-}
-
-.wrapper {
-  min-height: 100%;
 }
 
 .shoes-list-shoe {
