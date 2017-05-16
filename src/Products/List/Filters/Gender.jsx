@@ -1,23 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Item from './Button';
+import Button from './Button';
 
-const renderGenderItems = items => (
-  items.map(item => <Item key={item.name} item={item} />)
+const Gender = () => (
+  <div className="gender-filter">
+    <Button text={'MAN'} active name={'gender-man'} />
+    <Button text={'WOMAN'} active={false} name={'gender-woman'} />
+  </div>
 );
 
-function Gender({ items }) {
-  const filterItems = renderGenderItems(items);
-  return (
-    <div className="gender-filter">
-      {filterItems}
-    </div>
-  );
-}
-
-Gender.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
-
 export default Gender;
-

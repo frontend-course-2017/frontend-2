@@ -1,20 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button({ item }) {
+function Button({ name, active, text }) {
   return (
-    <button name={item.name} className={`filter-button ${item.active ? 'filter-button-pressed' : ''}`}>
-      {item.text}
+    <button name={name} className={`filter-button ${active ? 'filter-button-pressed' : ''}`}>
+      {text}
     </button>
   );
 }
 
 Button.propTypes = {
-  item: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired,
-    active: PropTypes.bool.isRequired,
-  }).isRequired,
+  name: PropTypes.string.isRequired,
+  active: PropTypes.bool.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default Button;

@@ -1,26 +1,19 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Button from './Button';
 
-import Item from './Button';
-
-const renderSizeItems = (items = []) => (
-   items.map(item => <Item key={item.name} item={item} />)
-);
-
-function Size({ items }) {
-  const filterItems = renderSizeItems(items);
-  return (
-    <div className="size-filter">
-      <div className="size-filter-name">SIZE</div>
-      <div className="size-filter-controls">
-        {filterItems}
-      </div>
+const Size = () => (
+  <div className="size-filter">
+    <div className="size-filter-name">SIZE</div>
+    <div className="size-filter-controls">
+      <Button name={'size-36'} active={false} text={'36'} />
+      <Button name={'size-37'} active={false} text={'37'} />
+      <Button name={'size-38'} active={false} text={'38'} />
+      <Button name={'size-39'} active={false} text={'39'} />
+      <Button name={'size-40'} active={false} text={'40'} />
+      <Button name={'size-41'} active={false} text={'41'} />
+      <Button name={'size-42'} active={false} text={'42'} />
     </div>
-  );
-}
-
-Size.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.object).isRequired,
-};
+  </div>
+);
 
 export default Size;
