@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const Heading = styled.h1`
+const HeadingStyled = styled.h1`
   position: absolute;
   top: 26px;
   left: 31px;
@@ -59,7 +59,7 @@ const ColorButton = styled.button`
   }
 `;
 
-const Price = styled.h2`
+const PriceStyled = styled.h2`
   position: absolute;
   color: #e2e2e2;
   font-family: AvenirNext-Bold;
@@ -111,7 +111,7 @@ const BuyButton = styled.button`
   bottom: 0;
 `;
 
-const Description = styled.div`
+const DescriptionStyled = styled.div`
   font-size: 33px;
   font-weight: 500;
   line-height: 1.52;
@@ -122,15 +122,15 @@ const Description = styled.div`
 `;
 
 export {
-  Heading,
   SaveButton,
   Product,
   Panel,
   ColorButton,
-  Price,
+  PriceStyled,
   Picture,
   ButtonWrap,
   ButtonCentered,
   BuyButton,
-  Description,
+  DescriptionStyled,
+  HeadingStyled,
 };

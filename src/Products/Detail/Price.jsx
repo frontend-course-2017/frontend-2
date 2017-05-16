@@ -1,9 +1,19 @@
 import React from 'react';
-import { Price } from './styled';
+import PropTypes from 'prop-types';
+import { PriceStyled } from './styled';
 
-export default (props) => (
-  <Price>
-    {props.children}
-  </Price>
+const Price = ({ children }) => (
+  <PriceStyled>
+    {children}
+  </PriceStyled>
 );
 
+Price.propTypes = {
+  children: PropTypes.node,
+};
+
+Price.defaultProps = {
+  children: '',
+};
+
+export default Price;

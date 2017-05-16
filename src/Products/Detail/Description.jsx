@@ -1,11 +1,22 @@
 import React from 'react';
-import { Description } from './styled';
+import PropTypes from 'prop-types';
+import { DescriptionStyled } from './styled';
 
-export default (props) => (
-  <Description>
+const Description = ({ children }) => (
+  <DescriptionStyled>
     <p>
-      {props.children}
+      { children }
     </p>
-  </Description>
+  </DescriptionStyled>
 );
+
+Description.propTypes = {
+  children: PropTypes.node,
+};
+
+Description.defaultProps = {
+  children: '',
+};
+
+export default Description;
 

@@ -1,7 +1,19 @@
 import React from 'react';
-import { Heading } from './styled';
+import PropTypes from 'prop-types';
+import { HeadingStyled } from './styled';
 
-export default (props) => (
-  <Heading>{props.children}</Heading>
+const Heading = ({ children }) => (
+  <HeadingStyled>{children}</HeadingStyled>
 );
+
+
+Heading.propTypes = {
+  children: PropTypes.node,
+};
+
+Heading.defaultProps = {
+  children: '',
+};
+
+export default Heading;
 

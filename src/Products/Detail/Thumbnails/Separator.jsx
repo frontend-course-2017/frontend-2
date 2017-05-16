@@ -3,8 +3,8 @@ import { Separator, SeparatorUnit } from './styled';
 
 export default () => (
   <Separator>
-    <SeparatorUnit/>
-    <SeparatorUnit/>
-    <SeparatorUnit/>
+    <SeparatorUnit />
+    <SeparatorUnit />
+    <SeparatorUnit />
   </Separator>
 );
