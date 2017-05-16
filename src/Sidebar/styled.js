@@ -16,7 +16,7 @@ const Logo = styled.div`
   margin-top: 31px;
 `;
 
-const SearchContainer = styled.div`
+const Container = styled.div`
   width: 89.37%;
   display: flex;
   justify-content: center;
@@ -25,16 +25,16 @@ const SearchContainer = styled.div`
   padding-left: 14px;
 `;
 
-const SearchSubmitContainer = styled.div`
+const SubmitContainer = styled.div`
   
 `;
 
-const SearchForm = styled.form`
+const Form = styled.form`
   flex-basis: 100%;
   display: flex;
 `;
 
-const SearchSubmit = styled.input`
+const Submit = styled.input`
   width: 28px;
   height: 30px;
   background-color: transparent;
@@ -45,12 +45,12 @@ const SearchSubmit = styled.input`
   padding-right: 5px;
 `;
 
-const SearchInputContainer = styled.div`
+const InputContainer = styled.div`
   padding-left: 15px;
   flex-basis: 100%;
 `;
 
-const SearchInput = styled.input`
+const Input = styled.input`
   background-color: transparent;
   border: none;
   color: white;
@@ -65,10 +65,10 @@ const SearchInput = styled.input`
 export {
   Sidebar,
   Logo,
-  SearchContainer,
-  SearchSubmitContainer,
-  SearchForm,
-  SearchSubmit,
-  SearchInputContainer,
-  SearchInput,
+  Container,
+  SubmitContainer,
+  Form,
+  Submit,
+  InputContainer,
+  Input,
 };

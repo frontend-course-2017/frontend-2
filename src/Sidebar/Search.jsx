@@ -1,22 +1,22 @@
 import React from 'react';
 import {
-  SearchContainer,
-  SearchSubmitContainer,
-  SearchForm,
-  SearchSubmit,
-  SearchInputContainer,
-  SearchInput,
+  Container,
+  SubmitContainer,
+  Form,
+  Submit,
+  InputContainer,
+  Input,
 } from './styled';
 
 export default () => (
-  <SearchContainer>
-    <SearchForm name="search" action="" method="get">
-      <SearchSubmitContainer>
-        <SearchSubmit type="submit" value="Search" />
-      </SearchSubmitContainer>
-      <SearchInputContainer>
-        <SearchInput title="Search" type="text" />
-      </SearchInputContainer>
-    </SearchForm>
-  </SearchContainer>
+  <Container>
+    <Form name="search" action="" method="get">
+      <SubmitContainer>
+        <Submit type="submit" value="Search" />
+      </SubmitContainer>
+      <InputContainer>
+        <Input title="Search" type="text" />
+      </InputContainer>
+    </Form>
+  </Container>
 );
