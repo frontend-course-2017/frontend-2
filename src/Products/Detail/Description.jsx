@@ -1,16 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { DescriptionStyled } from './styled';
 
-const Description = ({ text }) => (
-  <div className="product-description">
+const Description = ({ children }) => (
+  <DescriptionStyled>
     <p>
-      {text}
+      { children }
     </p>
-  </div>
+  </DescriptionStyled>
 );
 
 Description.propTypes = {
-  text: PropTypes.string.isRequired,
+  children: PropTypes.node,
+};
+
+Description.defaultProps = {
+  children: '',
 };
 
 export default Description;
+

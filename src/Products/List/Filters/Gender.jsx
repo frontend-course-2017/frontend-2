@@ -1,11 +1,10 @@
 import React from 'react';
 import Button from './Button';
+import { Gender } from './styled';
 
-const Gender = () => (
-  <div className="gender-filter">
-    <Button text={'MAN'} active name={'gender-man'} />
-    <Button text={'WOMAN'} active={false} name={'gender-woman'} />
-  </div>
+export default () => (
+  <Gender>
+    <Button isGenderFilter active name={'gender-man'}>MAN</Button>
+    <Button isGenderFilter active={false} name={'gender-woman'}>WOMAN</Button>
+  </Gender>
 );
-
-export default Gender;

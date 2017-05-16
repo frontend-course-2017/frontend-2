@@ -1,11 +1,12 @@
 import React from 'react';
+import { MorePhotoButton, MorePhoto } from './styled';
 
 export default () => (
-  <div className="product-thumbnails-more-photo">
-    <button className="more-photo-button">
+  <MorePhoto>
+    <MorePhotoButton>
       see<br />
       more<br />
       photos<br />
-    </button>
-  </div>
+    </MorePhotoButton>
+  </MorePhoto>
 );

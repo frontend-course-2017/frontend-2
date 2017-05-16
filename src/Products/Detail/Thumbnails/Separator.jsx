@@ -1,9 +1,10 @@
 import React from 'react';
+import { Separator, SeparatorUnit } from './styled';
 
 export default () => (
-  <div className="product-thumbnails-separator">
-    <div className="separator-unit" />
-    <div className="separator-unit" />
-    <div className="separator-unit" />
-  </div>
+  <Separator>
+    <SeparatorUnit />
+    <SeparatorUnit />
+    <SeparatorUnit />
+  </Separator>
 );

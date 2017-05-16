@@ -9,6 +9,7 @@ import ColorSelector from './ColorSelector';
 import SaveButton from './SaveButton';
 import Heading from './Heading';
 import SaleBadge from '../../components/SaleBadge';
+import { Product } from './styled';
 
 const product = {
   price: '170$',
@@ -17,40 +18,44 @@ const product = {
     {
       src: '/images/thumbnail_1.jpg',
       id: 1,
+      active: false,
     },
     {
       src: '/images/big_shoe.jpg',
       id: 2,
+      active: false,
     },
     {
       src: '/images/thumbnail_2.jpg',
       id: 3,
+      active: false,
     },
     {
       src: '/images/thumbnail_3.jpg',
       id: 4,
+      active: true,
     },
   ],
   name: 'ULTRA BOOST',
   colors: [
     {
-      className: 'color-selector-button-silver',
       name: 'Silver',
+      code: '#c5c5c5',
       id: 1,
     },
     {
-      className: 'color-selector-button-havelock-blue',
       name: 'Havelock blue',
+      code: '#4d87ca',
       id: 2,
     },
     {
-      className: 'color-selector-button-gainsboro',
       name: 'Gainsboro',
+      code: '#e0e0e0',
       id: 3,
     },
     {
-      className: 'color-selector-button-charcoal',
       name: 'Charcoal',
+      code: '#4a4a4a',
       id: 4,
     },
   ],
@@ -60,17 +65,15 @@ const product = {
 };
 
 export default () => (
-  <section className="content">
-    <div className="product">
-      <Heading text={product.name} />
-      <SaveButton />
-      <ColorSelector colors={product.colors} />
-      <SaleBadge sale={product.sale} className={'product-sale-badge'} />
-      <Price value={product.price} />
-      <Image src={product.imgSrc} />
-      <Thumbnails srcs={product.thumbnails} />
-      <Description text={product.description} />
-      <BuyButton />
-    </div>
-  </section>
+  <Product>
+    <Heading>{product.name}</Heading>
+    <SaveButton />
+    <ColorSelector colors={product.colors} />
+    <SaleBadge sale={product.sale} />
+    <Price>{product.price}</Price>
+    <Image src={product.imgSrc} />
+    <Thumbnails srcs={product.thumbnails} />
+    <Description>{product.description}</Description>
+    <BuyButton />
+  </Product>
 );

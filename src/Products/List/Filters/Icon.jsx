@@ -1,16 +1,14 @@
 import React from 'react';
-import FilterIcon from './images/filter.png';
+import { IconWrapper, IconContainer, Icon } from './styled';
+import IconImg from './images/filter.png';
 
-function Icon() {
-  return (
-    <div className="filter-icon-wrapper">
-      <div className="filter-icon-container">
-        <div className="filter-icon">
-          <img alt={''} src={FilterIcon} />
-        </div>
-      </div>
-    </div>
-  );
-}
+export default () => (
+  <IconWrapper>
+    <IconContainer>
+      <Icon>
+        <img alt={''} src={IconImg} />
+      </Icon>
+    </IconContainer>
+  </IconWrapper>
+);
 
-export default Icon;

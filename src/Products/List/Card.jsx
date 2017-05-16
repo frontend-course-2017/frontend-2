@@ -1,29 +1,41 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SaleBadge from '../../components/SaleBadge';
+import {
+  ShoesListShoe,
+  ThumbnailWrapper,
+  ThumbnailContainer,
+  ThumbnailLink,
+  ThumbnailImg,
+  DetailLinkWrapper,
+  DetailLinkContainer,
+  DetailLink,
+
+} from './styled';
 
 
 function Card({ item }) {
   return (
-    <div className="shoes-list-shoe">
-      <div className="shoe-thumbnail-wrapper">
-        <div className="shoe-thumbnail-container">
-          <a className="shoe-thumbnail-link" href={item.link}>
-            <SaleBadge sale={item.sale} className={'shoe-thumbnail-sale-badge'} />
-            <img className="shoe-thumbnail" alt={''} src={item.imgSrc} />
-          </a>
-        </div>
-      </div>
-      <div className="shoe-detail-link-wrapper">
-        <div className={`shoe-detail-link-container ${item.sale ? 'shoe-detail-link-container-sale' : ''}`}>
-          <a className="shoe-detail-link" href={item.link}>
+    <ShoesListShoe>
+      <ThumbnailWrapper>
+        <ThumbnailContainer>
+          <ThumbnailLink href={item.link}>
+            <SaleBadge sale={item.sale} isInList />
+            <ThumbnailImg alt={''} src={item.imgSrc} />
+          </ThumbnailLink>
+        </ThumbnailContainer>
+      </ThumbnailWrapper>
+      <DetailLinkWrapper>
+        <DetailLinkContainer sale={item.sale}>
+          <DetailLink href={item.link} sale={item.sale}>
             {item.price}
-          </a>
-        </div>
-      </div>
-    </div>
+          </DetailLink>
+        </DetailLinkContainer>
+      </DetailLinkWrapper>
+    </ShoesListShoe>
   );
 }
+
 
 Card.propTypes = {
   item: PropTypes.shape({

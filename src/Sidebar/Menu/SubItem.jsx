@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NavLink } from 'react-router-dom';
+import { SubItemStyled, SubItemLink } from './styled';
 
 const SubItem = ({ link, text }) => (
-  <div className="menu-sub-item">
-    <NavLink to={link} activeClassName={'menu-sub-item_active'}>{text}</NavLink>
-  </div>
+  <SubItemStyled>
+    <SubItemLink to={link} activeStyle={{ color: '#fff' }}>{text}</SubItemLink>
+  </SubItemStyled>
 );
 
 SubItem.propTypes = {

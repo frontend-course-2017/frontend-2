@@ -1,18 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { StyledButton } from './styled';
 
-function Button({ name, active, text }) {
+function Button({ name, active, children, isGenderFilter }) {
   return (
-    <button name={name} className={`filter-button ${active ? 'filter-button-pressed' : ''}`}>
-      {text}
-    </button>
+    <StyledButton name={name} genderFilter={isGenderFilter} active={active}>
+      {children}
+    </StyledButton>
   );
 }
+
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,
   active: PropTypes.bool.isRequired,
-  text: PropTypes.string.isRequired,
+  isGenderFilter: PropTypes.bool,
+  children: PropTypes.node,
+};
+
+Button.defaultProps = {
+  isGenderFilter: false,
+  children: '',
 };
 
 export default Button;

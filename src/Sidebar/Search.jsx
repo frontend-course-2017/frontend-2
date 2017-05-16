@@ -1,15 +1,22 @@
 import React from 'react';
-import './styles.css';
+import {
+  Container,
+  SubmitContainer,
+  Form,
+  Submit,
+  InputContainer,
+  Input,
+} from './styled';
 
 export default () => (
-  <div className="search-container">
-    <form className="search-form" name="search" action="" method="get">
-      <div className="search-submit-container">
-        <input type="submit" value="Search" className="search-submit" />
-      </div>
-      <div className="search-input-container">
-        <input title="Search" type="text" className="search-input" />
-      </div>
-    </form>
-  </div>
+  <Container>
+    <Form name="search" action="" method="get">
+      <SubmitContainer>
+        <Submit type="submit" value="Search" />
+      </SubmitContainer>
+      <InputContainer>
+        <Input title="Search" type="text" />
+      </InputContainer>
+    </Form>
+  </Container>
 );
