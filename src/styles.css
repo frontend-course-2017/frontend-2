@@ -213,9 +213,9 @@ button {
 }
 
 .shoe-detail-link-container.shoe-detail-link-container-sale {
-  background-image: linear-gradient(to right, #0c09bf, #966dd8);
-  background-image: -webkit-linear-gradient(left, #0c09bf, #966dd8);
-  background-image: -webkit-gradient(linear, left top, right top, from(#0c09bf), to(#966dd8));
+  background-image: linear-gradient(107deg, #0c09bf, #966dd8);
+  background-image: -webkit-linear-gradient(107deg, #0c09bf, #966dd8);
+  background-image: -moz-linear-gradient(107deg, #0c09bf, #966dd8);
 }
 
 .shoe-detail-link {
