@@ -6,7 +6,7 @@ import SubItems from './SubItems';
 const NavigationItem = ({ link, text, hasSubItems }) => (
   <MenuItem>
     <MenuItemLink>
-      <MenuNavLink to={link} activeStyle={{ color: '#fff' }}>{text}</MenuNavLink>
+      <MenuNavLink to={link} hasSubItems={hasSubItems} activeStyle={{ color: '#fff' }}>{text}</MenuNavLink>
     </MenuItemLink>
     <SubItems show={hasSubItems} />
   </MenuItem>

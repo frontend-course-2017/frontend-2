@@ -4,7 +4,7 @@ import NavigationItem from './NavigationItem';
 
 const Menu = () => (
   <NavMenu>
-    <NavigationItem link={'/'} text={'SHOES'} hasSubItems />
+    <NavigationItem link={'/'} text={'SPORTS'} hasSubItems />
     <NavigationItem link={'/brands/'} text={'BRANDS'} hasSubItems={false} />
     <NavigationItem link={'/micoach/'} text={'MICOACH'} hasSubItems={false} />
   </NavMenu>

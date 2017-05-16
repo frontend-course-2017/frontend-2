@@ -6,7 +6,6 @@ import Logo from './Logo';
 import Search from './Search';
 import Menu from './Menu';
 import { Sidebar } from './styled';
-import './styles.css';
 
 export default () => (
   <Sidebar>
