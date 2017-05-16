@@ -4,7 +4,7 @@ import { Gender } from './styled';
 
 export default () => (
   <Gender>
-    <Button text={'MAN'} genderFilter active name={'gender-man'} />
-    <Button text={'WOMAN'} genderFilter active={false} name={'gender-woman'} />
+    <Button text={'MAN'} isGenderFilter active name={'gender-man'} />
+    <Button text={'WOMAN'} isGenderFilter active={false} name={'gender-woman'} />
   </Gender>
 );

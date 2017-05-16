@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyledButton } from './styled';
 
-function Button({ name, active, text, genderFilter }) {
+function Button({ name, active, text, isGenderFilter }) {
   return (
-    <StyledButton name={name} genderFilter={genderFilter} active={active}>
+    <StyledButton name={name} genderFilter={isGenderFilter} active={active}>
       {text}
     </StyledButton>
   );
@@ -15,11 +15,11 @@ Button.propTypes = {
   name: PropTypes.string.isRequired,
   active: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired,
-  genderFilter: PropTypes.bool,
+  isGenderFilter: PropTypes.bool,
 };
 
 Button.defaultProps = {
-  genderFilter: false,
+  isGenderFilter: false,
 };
 
 export default Button;
