@@ -63,12 +63,12 @@ const SearchInput = styled.input`
 `;
 
 export {
-Sidebar,
-Logo,
-SearchContainer,
-SearchSubmitContainer,
-SearchForm,
-SearchSubmit,
-SearchInputContainer,
-SearchInput,
+  Sidebar,
+  Logo,
+  SearchContainer,
+  SearchSubmitContainer,
+  SearchForm,
+  SearchSubmit,
+  SearchInputContainer,
+  SearchInput,
 };
