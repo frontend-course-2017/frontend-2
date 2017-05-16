@@ -5,14 +5,15 @@ import {
 import Logo from './Logo';
 import Search from './Search';
 import Menu from './Menu';
+import { Sidebar } from './styled';
 import './styles.css';
 
 export default () => (
-  <aside className="sidebar">
+  <Sidebar>
     <Logo />
     <Search />
     <Router>
       <Menu />
     </Router>
-  </aside>
+  </Sidebar>
   );

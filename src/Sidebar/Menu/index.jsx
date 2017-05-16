@@ -1,12 +1,13 @@
 import React from 'react';
+import { NavMenu } from './styled';
 import NavigationItem from './NavigationItem';
 
 const Menu = () => (
-  <nav className="menu">
+  <NavMenu>
     <NavigationItem link={'/'} text={'SHOES'} hasSubItems />
     <NavigationItem link={'/brands/'} text={'BRANDS'} hasSubItems={false} />
     <NavigationItem link={'/micoach/'} text={'MICOACH'} hasSubItems={false} />
-  </nav>
+  </NavMenu>
 );
 
 export default Menu;

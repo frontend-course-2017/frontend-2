@@ -3,15 +3,16 @@ import {
   BrowserRouter as Router,
   NavLink,
 } from 'react-router-dom';
+import { Logo } from './styled';
 import LogoImg from './images/logo.png';
 import './styles.css';
 
 export default () => (
-  <div className="logo">
+  <Logo>
     <Router>
       <NavLink to="/">
         <img alt="Adidas" src={LogoImg} />
       </NavLink>
     </Router>
-  </div>
+  </Logo>
 );
