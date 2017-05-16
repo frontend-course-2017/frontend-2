@@ -70,67 +70,6 @@ button {
   flex-basis: 71.23%;
 }
 
-.filter {
-  display: flex;
-  height: 77px;
-  border-bottom: 3px solid #e7e7e7;
-  align-items: center;
-  font-family: AvenirNext-Bold;
-  font-size: 24px;
-  color: #4d42f8;
-  font-weight: bold;
-}
-
-.filter-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: #d6d6d6;
-  font-family: AvenirNext-Bold;
-  font-size: 24px;
-  padding: 0 0 0 0;
-  margin-right: 6px;
-}
-
-.filter-button-pressed {
-  color: #4d42f8;
-  font-weight: bold;
-}
-
-.filter-icon-wrapper {
-  padding-left: 24px;
-}
-
-.filter-icon-container {
-  height: 55px;
-  width: 55px;
-  background-color: #ebebeb;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.filter-form {
-  display: flex;
-}
-
-.gender-filter {
-  padding-left: 30px;
-}
-
-.gender-filter .filter-button {
-  padding-right: 10px;
-}
-
-.size-filter {
-  padding-left: 50px;
-  display: flex;
-}
-
-.size-filter-name {
-  padding-right: 18px;
-}
 
 .shoes-list-shoe {
   background-color: #f4f4f4;
@@ -232,9 +171,6 @@ button {
   max-width: 100%;
   height: auto;
   flex-shrink: 0;
-}
-
-.search-container {
 }
 
 .product {
