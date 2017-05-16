@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import SubItem from './SubItem';
-import { MenuSubItems } from './styled';
+import { SubItemsStyled } from './styled';
 
 const SubItems = ({ show }) => (
   show &&
-  <MenuSubItems>
+  <SubItemsStyled >
     <SubItem text={'SHOES'} link={'/'} />
     <SubItem text={'CLOTHING'} link={'/sports/clothing/'} />
     <SubItem text={'ACCESSORIES'} link={'/sports/accessories/'} />
-  </MenuSubItems>
+  </SubItemsStyled>
 );
 
 SubItems.propTypes = {

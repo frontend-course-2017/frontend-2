@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MenuItem, MenuItemLink, MenuNavLink } from './styled';
+import { Item, ItemLink, NavLinkStyled } from './styled';
 import SubItems from './SubItems';
 
 const NavigationItem = ({ link, text, hasSubItems }) => (
-  <MenuItem>
-    <MenuItemLink>
-      <MenuNavLink to={link} hasSubItems={hasSubItems} activeStyle={{ color: '#fff' }}>{text}</MenuNavLink>
-    </MenuItemLink>
+  <Item>
+    <ItemLink>
+      <NavLinkStyled to={link} hasSubItems={hasSubItems} activeStyle={{ color: '#fff' }}>{text}</NavLinkStyled>
+    </ItemLink>
     <SubItems show={hasSubItems} />
-  </MenuItem>
+  </Item>
 );
 
 NavigationItem.propTypes = {

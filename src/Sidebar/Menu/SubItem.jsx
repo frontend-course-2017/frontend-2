@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { MenuSubItem, MenuSubItemLink } from './styled';
+import { SubItemStyled, SubItemLink } from './styled';
 
 const SubItem = ({ link, text }) => (
-  <MenuSubItem>
-    <MenuSubItemLink to={link} activeStyle={{ color: '#fff' }}>{text}</MenuSubItemLink>
-  </MenuSubItem>
+  <SubItemStyled>
+    <SubItemLink to={link} activeStyle={{ color: '#fff' }}>{text}</SubItemLink>
+  </SubItemStyled>
 );
 
 SubItem.propTypes = {

@@ -10,17 +10,17 @@ const NavMenu = styled.nav`
   align-items: center;
 `;
 
-const MenuItem = styled.div`
+const Item = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 40px;
 `;
 
-const MenuItemLink = styled.div`
+const ItemLink = styled.div`
 `;
 
-const MenuNavLinkExpanded = `
+const NavLinkExpanded = `
   &:after {
     content: url(${ExpandedPict});
     vertical-align: 10%;
@@ -29,22 +29,22 @@ const MenuNavLinkExpanded = `
 `;
 
 
-const MenuNavLink = styled(NavLink)`
+const NavLinkStyled = styled(NavLink)`
   font-family: AvenirNext-Bold;
   color: #303030;
   text-decoration: none;
   
-  ${props => props.hasSubItems && MenuNavLinkExpanded}
+  ${props => props.hasSubItems && NavLinkExpanded}
 `;
 
-const MenuSubItems = styled.div`
+const SubItemsStyled = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 15px 0 0 0;
 `;
 
-const MenuSubItem = styled.div`
+const SubItemStyled = styled.div`
   font-family: AndaleMono;
   font-weight: normal;
   margin-bottom: 25px;
@@ -54,17 +54,17 @@ const MenuSubItem = styled.div`
   }
 `;
 
-const MenuSubItemLink = styled(NavLink)`
+const SubItemLink = styled(NavLink)`
   color: #303030;
   text-decoration: none;
 `;
 
 export {
   NavMenu,
-  MenuItem,
-  MenuItemLink,
-  MenuSubItem,
-  MenuSubItems,
-  MenuNavLink,
-  MenuSubItemLink,
+  Item,
+  ItemLink,
+  SubItemStyled,
+  SubItemsStyled,
+  NavLinkStyled,
+  SubItemLink,
 };
